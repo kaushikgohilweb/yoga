@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700;800&display=swap');
+font-family: 'Open Sans', sans-serif;
+*,
+*:before,
+*:after { box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -o-box-sizing: border-box; -ms-box-sizing: border-box; }
+* { box-sizing: border-box; }
+body { margin: 0px; font-family: 'Open Sans', sans-serif; font-size: 21px; font-weight: 400; color: #484f5b; }
+ul { margin: 0px; padding: 0px; }
+ul li { list-style: none; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { margin-top: 0px; margin-bottom: 10px; font-weight: 900; color: #2c4755; }
+h1 { font-size: 50px; color: #10cab7; }
+a { text-decoration: none; transition: all 0.3s ease-in-out; display: inline-block; }
+img { max-width: 100%; height: auto; }
+h1 { font-size: 75px; font-weight: 700; line-height: 1.2em; color: #484f5b; text-transform: capitalize; }
+h2 { font-size: 58px; font-weight: 700; line-height: 1.2em; color: #484f5b; text-transform: capitalize; }
+h3 { font-size: 33px; font-weight: 700; line-height: 1.3em; color: #484f5b; text-transform: capitalize; }
+p{margin: 0px;}
+/*h4 { font-size: 35px; font-weight: 700; line-height: 1.6em; color: #000; text-transform: uppercase; }
+h5 { font-size: 35px; font-weight: 700; line-height: 1.6em; color: #000; text-transform: uppercase; }
+h6 { font-size: 35px; font-weight: 700; line-height: 1.6em; color: #000; text-transform: uppercase; }*/
+.tl { text-align: left; }
+.tr { text-align: right; }
+.tc { text-align: center; }
+.pt { padding-top: 50px }
+.pb { padding-bottom: 50px; }
+.px { padding: 0px 10px; }
+.py { padding: 10px; 0px }
+.d-flex { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; flex-wrap: wrap; width: auto; }
+.w-100 { width: 100%; }
+.w-50 { width: 50%; }
+.w-25 { width: 25%; }
+.container { width: 100%; max-width: 1290px; padding: 0px 15px; margin: 0 auto; }
+.btn a { display: inline-block; background: #efc8c3; color: #484f5b; font-weight: 700; padding: 19px 72px; text-transform: capitalize; }
+
+/*header-section
+*/
+header.header-section { display: block; width: 100%; }
+header.header-section .header-outer { width: 100%; justify-content: center; align-items: center; }
+header.header-section .header-left { width: 30%; }
+header.header-section .header-right { width: 70%; text-align: right; }
+header.header-section .header-right .header-menu { width: 100%; }
+.header-menu > ul > li > a { display: inline-block; color: #484f5b; padding: 16px 26px; }
+.header-menu ul li { display: inline-block; position: relative; }
+header.header-section .header-left a { display: inline-block; }
+header.header-section .header-left .logo { width: 100%; padding: 30px 0px; max-width: 100%; }
+.header-menu > ul > li > a:hover { background: #484f5b; color: #efc8c3; }
+.header-menu > ul > li.ero-icon > a:after { content: "\f078"; font-family: 'FontAwesome'; top: 0; left: 0; width: 100%; height: 100%; padding-left: 5px; }
+.header-menu ul li.ero-icon ul li { display: block; border-bottom: 1px solid #fff; }
+.header-menu ul li.ero-icon ul { position: absolute; top: 100%; right: 0; width: 180px; background: #484f5b; text-align: left; z-index: 1; opacity: 0; visibility: hidden; }
+.header-menu ul li.ero-icon ul li a { color: #ffff; padding: 8px 8px; display: block; }
+.header-menu ul li.ero-icon ul li:last-child { border-bottom: none; }
+.header-menu ul li.ero-icon ul li a:hover { background: #efc8c3; color: #484f5b; padding-left: 20px; transition: all 0.4s ease-in-out; }
+.header-menu ul li:hover > ul { opacity: 1; visibility: visible; }
+#troggle { width: 22px; height: 22px; position: absolute; top: 20px; right: 17px; z-index: 10; cursor: pointer; display: none; }
+
+/*hero-section*/
+.hero-section { width: 100%; padding: 80px 0px; position: relative; }
+.hero-section .hero-outer { width: auto; }
+.hero-section .hero-outer .hero-left { width: 50%; float: left; }
+.hero-section .hero-outer .hero-right { width: 50%; float: left; padding: 0px 20px; margin: 30px 0px; }
+.hero-section .hero-outer .hero-left { padding: 0px 20px; }
+.hero-section .hero-outer .hero-right .hero-right-text { padding: 60px 0px; line-height: 1.5em; max-width: 700px; font-weight: 400; }
+.hero-section:before { content: ""; background: url(../images/bg-shape-one.png)no-repeat top left; top: 0; left: 0; position: absolute; width: 100%; height: 100%; z-index: -1; }
+.hero-section:after { content: ""; background: url(../images/bg-shape-three.png) no-repeat bottom right; top: 0; right: 0; position: absolute; width: 100%; height: 100%; z-index: -1; }
+.hero-section .hero-outer:before { content: ""; background: url(../images/bg-shape-two.png) no-repeat top right; top: 0; right: 0; width: 100%; height: 100%; position: absolute; z-index: -1; }
+.hero-right-link.btn a:hover { background-color: #484f5b; color: #e6c8c3; }
+
+/*content-left-secttion*/
+.content-left-secttion { width: 100%; display: block; padding: 80px 0px; }
+.content-left-secttion .content-left-outer { width: 100%; min-height: 807px; display: flex; flex-wrap: wrap; align-items: center; max-width: 649px; }
+.content-left-secttion .content-left-outer .hero-right-text { padding: 40px 0px; line-height: 30px; font-weight: 400; max-width: 590px; }
+
+/*threecol-section*/
+.threecol-section { width: 100%; padding: 80px 0px; }
+.threecol-section .threecol-outer { width: auto; margin-left: -15px; margin-right: -15px; }
+.threecol-section .threecol-outer .threecol-box { width: 33.33%; padding: 15px; text-align: center; display: flex; flex-wrap: wrap; justify-content: center; }
+.threecol-img { width: 285px; height: 216px; display: flex; justify-content: center; align-items: center; }
+.threecol-img img { object-fit: contain; }
+.threecol-heading h3 { padding: 0px 10px; font-size: 25px; }
+.threecol-subtext p { margin: 0px; }
+
+/*pranayama-section*/
+.pranayama-section { width: 100%; padding: 80px 0px; position: relative; }
+.pranayama-section .pranayama-outer { width: auto; }
+.pranayama-section .pranayama-outer .pranayama-left { width: 50%; padding: 60px 0px; }
+.pranayama-section .pranayama-outer .pranayama-right { width: 50%; }
+.pranayama-section .pranayama-left-texr p { max-width: 590px; line-height: 30px; }
+.pranayama-section .pranayama-outer .pranayama-left .pranayama-left-texr p { margin: 0; padding: 30px 0px; }
+.pranayama-section .hero-right-text p { margin: 0; }
+.pranayama-section .pranayama-outer .pranayama-left h2 { max-width: 529px; }
+.pranayama-section .pranayama-right .pranayama-right-img { width: 100%; max-height: 550px; padding: 20px 0px; }
+.pranayama-section .pranayama-right .pranayama-right-img img { display: block; object-fit: contain; }
+.pranayama-section .pranayama { display: inline-block; }
+.pranayama-section .pranayama-image img { width: 100%; object-fit: contain; }
+.pranayama-section:before { content: ""; position: absolute; background: url(../images/bg-shape-four.png) no-repeat top left; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; }
+.pranayama-section:after { content: ""; background: url(../images/bg-shape-five.png) no-repeat bottom left; bottom: 0; left: 0; position: absolute; width: 100%; height: 100%; z-index: -1; }
+.pranayama.btn a:hover { color: #e6c8c3; background-color: #484f5b; }
+
+/*Joing-section*/
+.Joing-section { width: 100%; display: block; position: relative; background-color: #e9e8e6; }
+.Joing-section .Joing-outer { width: 100%; display: flex; flex-wrap: wrap; }
+.Joing-section .Joing-outer .Joing-left { width: 50%; }
+.Joing-section .Joing-outer .Joing-right { width: 50%;     position: relative;}
+.pranayama-section .pranayama-outer .pranayama-left .pranayama-left-texr { padding: 30px 0px; }
+.Joing-outer-texr { padding: 30px 0px; }
+.Joing-img { position: absolute; max-width: 100%; max-height: 610px; top: 0; left: 0; height: 100%; }
+.Joing-contanent { width: 100%; padding: 130px 0px; padding-left: 50px; position: relative; }
+.Joing-contanent h2 { max-width: 505px; }
+.Joing-section .Joing-outer .Joing-right:before { content: ""; background: url(../images/bg-join.png) no-repeat; position: absolute; top: 120px; left: 0; width: 100%; height: 100%; }
+.Joing.btn a:hover { color: #efc8c3; background: #484f5b; }
+
+/*galery-section*/
+.galery-section { width: 100%; display: block; padding: 80px 0px; position: relative; }
+.galery-section .galery-hedaing { width: 100%; text-align: center; max-width: 895px; margin: 0 auto; }
+.galery-section .galery-hedaing h2 { margin-bottom: 30px; }
+.galery-section .galery-hedaing .galery-title { line-height: 30px; margin-bottom: 40px; }
+.galery-outer { position: relative; margin: 0px -40px;     flex-wrap: inherit; }
+.galery-outer .galery-box { width: calc(100% / 3 - 40px); box-shadow: 0px 0px 6px; background: #fff; margin: 0px 40px; }
+.galery-img img { object-fit: cover; display: block; width: 100%; }
+.galery-img { width: 100%; max-height: 380px; }
+.galery-outer-hedaing { padding: 40px 30px; }
+.galery-outer-text { font-size: 17px; color: #484f5b; }
+.galery-section:before { content: ""; background: url(../images/galery-shape-one.png)no-repeat top right; position: absolute; top: 0; right: 0; width: 100%; height: 100%; z-index: -1; }
+.galery-section:after { content: ""; background: url(../images/galery-shape-three.png) no-repeat bottom left; bottom: 0; left: 0; position: absolute; width: 100%; height: 100%; z-index: -1; }
+.galery-outer:before { content: ""; background: url(../images/galery-shape-four.png)no-repeat top left; bottom: 243px; right: 50px; position: absolute; width: 100%; height: 100%; z-index: -1; }
+/*.galery-outer:after { content: ""; background: url(../images/galery-shape-two.png)no-repeat bottom right; top: 0; left: 0; position: absolute; width: 100%; height: 100%; z-index: -1; bottom: 0; right: 0; }*/
+
+/*training-video-section*/
+.training-video-section { width: 100%; display: block; padding: 150px 0px; background-color: #efc8c3; }
+.training-video-section .training-outer { width: 100%; display: flex; flex-wrap: wrap; }
+.training-video-section .training-outer .training-left { width: 50%; padding: 0px 30px; }
+.training-video-section .training-outer .training-right { width: 50%; max-width:630px; padding: 30px; }
+.training-right-texr { padding: 30px 0px; }
+.training-social { width: 100%; }
+.training-social ul li { display: inline-block; }
+.training-social ul li a { display: inline-block; width: 37px; height: 37px; background-color: #484f5b; color: #fff; text-align: center; line-height: 37px; font-size: 24px;     transition: all 0.5s ease-out; }
+.training-social ul li { margin: 0px 23px; }
+.training-social ul li:first-child { margin-left: 0px; }
+.training-social ul li a:hover { color: #484f5b; background: #fff; }
+.training-video-section iframe { box-shadow: 10px 10px 20px rgb(0 0 0 / 50%); width: 100%; height: 418px; }
+
+
+/*touch-section*/
+.touch-section { width: 100%; padding-top: 90px; padding-bottom: 65px; position: relative; }
+.touch-section .touch-heading { text-align: center; max-width: 900px; margin: 0 auto; }
+.touch-section .touch-heading h2 { margin-bottom: 30px; }
+.touch-section .touch-heading .touch-text { line-height: 30px; margin-bottom: 70px; }
+.forminfo { width: 100%; max-width: 940px; margin: 16px auto; padding: 17px 40px; background: #efefef; outline: none; border: 2px solid #b0b0b0; font-size: 20px; color: #484f5b; text-transform: capitalize; }
+.touch-section .touch-inner { width: 100%; text-align: center; }
+.touch-section .touch-inner textarea { height: 145px; resize: none; font-family: 'Open Sans'; margin-bottom: 53px; }
+.touch-section .touch-inner input[type="submit"] { text-transform: uppercase; font-size: 21px; background-color: #e6c8c3; color: #484f5b; border: none; cursor: pointer; padding: 13px 18px; font-weight: 600; }
+.touch-section:before { content: ""; background: url(../images/galery-shape-one.png) no-repeat top right; top: 0; right: 0; width: 100%; height: 100%; position: absolute; z-index: -1; }
+.touch-section:after { content: ""; background: url(../images/galery-shape-three.png)no-repeat bottom left; bottom: 0; left: 0; width: 100%; height: 100%; position: absolute; z-index: -1; }
+.touch-section .touch-inner:before { content: ""; background: url(../images/galery-shape-four.png)no-repeat top 123px left 344px; bottom: 0; left: 0; width: 100%; height: 100%; position: absolute; z-index: -1; }
+.touch-section .touch-inner:after {content: "";background: url(../images/galery-shape-two.png) no-repeat bottom right;position: absolute;bottom: 50px;right: 253px;width: 100%;height: 100%; z-index: -1;}
+
+
+
+
+/*footer-section*/
+.footer-section { width: 100%; background: #484f5b; padding-top: 57px; color: #fff; padding-bottom: 65px;}
+.footer-section .footer-col-one { width: 25%; padding: 0px 10px; }
+.footer-section .footer-col-one h4 { color: #fff; font-size: 25px; text-transform: capitalize; }
+.footer-section .footer-col-one address { font-size: 17px; font-style: normal; padding-top: 30px; padding-bottom: 35px; line-height: 26px; }
+.footer-section .footer-link a { display: inline-block; color: #fff; font-size: 17px; }
+.footer-section .footer-outer h5 { font-size: 18px; color: #fff; font-weight: 600; }
+.footer-section .footer-col-two { width: 16%; padding: 0px 10px; }
+.footer-section .footer-col-two ul li a { display: inline-block; color: #fff; font-size: 17px; padding: 5px 0px; }
+.footer-section .footer-col-three ul li a { display: inline-block; color: #fff; font-size: 17px; padding: 5px 0px; }
+.footer-section .footer-col-three { padding: 0px 10px; width: 16%; }
+.footer-section .footer-col-four { width: 16%; padding: 0px 10px; }
+.footer-section .footer-col-four ul li a { display: inline-block; color: #fff; font-size: 17px; padding: 5px 0px; }
+.footer-section .footer-col-five { width: 25%; padding: 0px 10px; }
+.footer-section .footer-col-five h5 a { display: inline; color: #ffff; }
+.footer-section .footer-col-five h5 { font-size: 17px; font-weight: 500; margin-bottom: 30px; }
+.footer-section .footer-logo { margin-bottom: 35px; }
+.footer-section .social-icon ul li { display: inline-block; margin: 0px 13px; }
+.footer-section .social-icon ul li a { color: #000; background: #fff; width: 27px; height: 27px; text-align: center; line-height: 27px; }
+.footer-section .social-icon ul li a:hover { background: #000; color: #fff; }
+.footer-section .header-menu ul li.ero-icon:hover ul { opacity: 1; visibility: visible; }
+.footer-section .footer-col-two ul li a:hover { text-decoration: underline; color: #ebbbb4; }
+.footer-section .footer-col-three ul li a:hover { text-decoration: underline; color: #edc2ba; }
+.footer-section .footer-col-four ul li a:hover { text-decoration: underline; color: #ebbbb4; }
+
+
+@media(max-width:1199px){
+    .container{max-width: 970px;}
+h1 { font-size: 57px; font-weight: 700; line-height: 1.2em; color: #484f5b; text-transform: capitalize; }
+h2 { font-size: 45px; font-weight: 700; line-height: 1.2em; color: #484f5b; text-transform: capitalize; }
+h3 { font-size: 28px; font-weight: 700; line-height: 1.3em; color: #484f5b; text-transform: capitalize; }
+.btn a { padding: 16px 50px; }
+header.header-section .header-left .logo { padding: 10px 0px; }
+.header-menu > ul > li > a { padding: 10px 10px; }
+.hero-section { padding: 70px 0px; }
+.hero-section .hero-outer .hero-right .hero-right-text { padding: 50px 0px; }
+.content-left-secttion .content-left-outer { min-height: 455px; }
+.content-left-secttion .content-left-outer .hero-right-text { padding: 35px 0px; max-width: 530px; }
+.pranayama-section { padding: 70px 0px; }
+.threecol-section { padding: 70px 0px; }
+.pranayama-section { padding: 70px 0px; }
+.pranayama-section .pranayama-outer .pranayama-left { padding: 50px 0px; }
+.pranayama-section .pranayama-outer .pranayama-left .pranayama-left-texr p { padding: 0; }
+.Joing-contanent h2 { max-width: 400px; }
+.Joing-img { max-width: 75%; }
+.Joing-contanent { padding: 90px 0px; }
+.galery-outer.d-flex { margin: 0; }
+.galery-section { padding: 70px 0px; }
+.galery-outer .galery-box { width: calc(100% / 3 - 20px); box-shadow: 0px 0px 6px; background: #fff; margin: 0px 20px; }
+.galery-outer-hedaing { padding: 30px 30px; }
+.training-video-section { padding: 100px 0px; }
+.training-video-section .training-outer .training-left { padding: 0px 10px; }
+.training-video-section .training-outer .training-right { padding: 20px; }
+.training-social ul li { margin: 0px 15px; }
+.training-social ul li { margin: 0px 15px; }
+.touch-section { padding-top: 80px; padding-bottom: 55px; }
+.touch-section .touch-heading .touch-text { margin-bottom: 55px; }
+.forminfo { max-width: 880px; }
+.touch-section .touch-inner input[type="submit"] { padding: 13px 13px; }
+.footer-section .footer-col-one { width: 25%; }
+.footer-section .footer-col-two { width: 16%; }
+.footer-section .footer-col-three { width: 16%; }
+.footer-section .footer-col-four { width: 16%; }
+.footer-section .footer-col-five { width: 25%; }
+.footer-section .footer-col-five h5 { margin-bottom: 20px; }
+
+
+}
+
+@media(max-width: 991px){
+    .container{max-width: 750px;}
+    body{font-size: 18px;}
+    h1 { font-size: 42px; font-weight: 700; line-height: 1.2em; color: #484f5b; text-transform: capitalize; }
+    h2 { font-size: 35px; font-weight: 700; line-height: 1.2em; color: #484f5b; text-transform: capitalize; }
+    h3 { font-size: 28px; font-weight: 700; line-height: 1.3em; color: #484f5b; text-transform: capitalize; }
+    .btn a { padding: 14px 40px; }
+    header.header-section .header-left { width: 20%; }
+    header.header-section .header-right { width: 80%; }
+    .hero-section { padding: 60px 0px; }
+    .hero-section .hero-outer .hero-right .hero-right-text { padding: 35px 0px; }
+    .content-left-secttion { padding: 60px 0px; }
+    .content-left-secttion { padding: 60px 0px; }
+    .content-left-secttion .content-left-outer { min-height: 360px; }
+    .content-left-secttion .content-left-outer .hero-right-text { padding: 30px 0px; max-width: 422px; }
+    .content-left-inner h1 { max-width: 555px; }
+    .threecol-section .threecol-outer .threecol-box { width: 50%; margin: 0 auto; }
+    .pranayama-section { padding: 60px 0px; }
+    .pranayama-section .pranayama-outer .pranayama-left .pranayama-left-texr { padding: 25px 0px; }
+    .pranayama-section .pranayama-outer .pranayama-left { padding: 20px 0px; }
+    .Joing-contanent { padding: 60px 0px; }
+    .Joing-img { max-width: 68%; padding-top: 57px; }
+    .Joing-outer-texr { padding: 25px 0px; }
+    .galery-section { padding: 60px 0px; }
+
+
+
+}
